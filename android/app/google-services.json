@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "212841961575",
+    "project_id": "mehdi1-fe454",
+    "storage_bucket": "mehdi1-fe454.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212841961575:android:a0d479c663ca596b0c9cc2",
+        "android_client_info": {
+          "package_name": "com.example.ffastpro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBOBdKVZWeHBQoxxrF0jB_ZQo4tlzSlKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
