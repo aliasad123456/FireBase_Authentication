@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -20,18 +19,14 @@ class _LoginScreenState extends State<LoginScreen> {
           email: userEmail.text, password: userPassword.text);
       SharedPreferences userCred = await SharedPreferences.getInstance();
       userCred.setString("userEmail", userEmail.text);
-      if (context.mounted) {
         Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const DashBoardScreen(),
+              builder: (context) =>   DashBoardScreen(),
             ));
-      }
     } on FirebaseAuthException catch (ex) {
-      if (context.mounted) {
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text(ex.code.toString())));
-      }
     }
   }
 
@@ -50,17 +45,17 @@ class _LoginScreenState extends State<LoginScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+            margin:   const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: TextFormField(
-              decoration: const InputDecoration(hintText: "Enter Your Email"),
+              decoration:   const InputDecoration(hintText: "Enter Your Email"),
               controller: userEmail,
             ),
           ),
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+            margin:   const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: TextFormField(
               decoration:
-                  const InputDecoration(hintText: "Enter Your Password"),
+                    const InputDecoration(hintText: "Enter Your Password"),
               controller: userPassword,
             ),
           ),
@@ -69,7 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: () {
                     userLogin();
                   },
-                  child: const Text("Login")))
+                  child:   const Text("Login")))
         ],
       ),
     );

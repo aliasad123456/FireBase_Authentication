@@ -3,7 +3,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class MyHome extends StatefulWidget {
-  const MyHome({super.key});
 
   @override
   State<MyHome> createState() => _MyHomeState();
@@ -19,13 +18,9 @@ class _MyHomeState extends State<MyHome> {
       await FirebaseAuth.instance.createUserWithEmailAndPassword(email: userEmail.text, password: userPassword.text);
       userEmail.clear();
       userPassword.clear();
-      if(context.mounted){
-        Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginScreen(),));
-      }
+        Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen(),));
     } on FirebaseAuthException catch(ex){
-      if(context.mounted){
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(ex.code.toString())));
-      }
     }
   }
 

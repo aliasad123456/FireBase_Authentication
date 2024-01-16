@@ -14,15 +14,14 @@ void main() async{
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform
   );
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );
@@ -30,7 +29,6 @@ class MyApp extends StatelessWidget {
 }
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -50,10 +48,10 @@ class _SplashScreenState extends State<SplashScreen> {
 
     getUserCred().then((value) {
       if(value != null ){
-        Timer(const Duration(milliseconds: 3000), () => Navigator.push(context, MaterialPageRoute(builder:  (context) => const DashBoardScreen(),)),);
+        Timer(const Duration(milliseconds: 3000), () => Navigator.push(context, MaterialPageRoute(builder:  (context) => DashBoardScreen(),)),);
       }
       else{
-        Timer(const Duration(milliseconds: 3000), () => Navigator.push(context, MaterialPageRoute(builder:  (context) => const MyHome(),)),);
+        Timer(const Duration(milliseconds: 3000), () => Navigator.push(context, MaterialPageRoute(builder:  (context) => MyHome(),)),);
       }
     });
     super.initState();

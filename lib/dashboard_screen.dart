@@ -1,11 +1,9 @@
-import 'package:ffastpro/main.dart';
 import 'package:ffastpro/register_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class DashBoardScreen extends StatefulWidget {
-  const DashBoardScreen({super.key});
 
   @override
   State<DashBoardScreen> createState() => _DashBoardScreenState();
@@ -16,13 +14,11 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
     await FirebaseAuth.instance.signOut();
     SharedPreferences userCred = await SharedPreferences.getInstance();
     userCred.clear();
-    if (context.mounted) {
       Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const MyHome(),
+            builder: (context) => MyHome(),
           ));
-    }
   }
 
   @override
