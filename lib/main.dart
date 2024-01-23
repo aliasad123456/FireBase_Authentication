@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:ffastpro/UserCrud/user_fetch.dart';
 import 'package:ffastpro/dashboard_screen.dart';
 import 'package:ffastpro/firebase_options.dart';
 import 'package:ffastpro/register_screen.dart';
@@ -20,9 +21,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CreateUser(),
+      home: fetchScreen(),
     );
   }
 }

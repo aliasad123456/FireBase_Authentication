@@ -44,38 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCzM4b6eYaHqKYtYWpur-A-WwOo-BjN8Ug',
-    appId: '1:212841961575:web:7f646fa65b2d4f710c9cc2',
-    messagingSenderId: '212841961575',
-    projectId: 'mehdi1-fe454',
-    authDomain: 'mehdi1-fe454.firebaseapp.com',
-    storageBucket: 'mehdi1-fe454.appspot.com',
-    measurementId: 'G-FH2PTNHP74',
+    apiKey: 'AIzaSyAycD_WN1fxbvVfHpO8ptHx8jbrks88xog',
+    appId: '1:929162421351:web:98093ec591cb1590d820c2',
+    messagingSenderId: '929162421351',
+    projectId: 'asadproject-f2871',
+    authDomain: 'asadproject-f2871.firebaseapp.com',
+    storageBucket: 'asadproject-f2871.appspot.com',
+    measurementId: 'G-GSHHMM7TSV',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDBOBdKVZWeHBQoxxrF0jB_ZQo4tlzSlKE',
-    appId: '1:212841961575:android:a0d479c663ca596b0c9cc2',
-    messagingSenderId: '212841961575',
-    projectId: 'mehdi1-fe454',
-    storageBucket: 'mehdi1-fe454.appspot.com',
+    apiKey: 'AIzaSyD59ouyzzEqLdO7ioM4A7qcaDg7jr2feZs',
+    appId: '1:929162421351:android:eecf8e7482572453d820c2',
+    messagingSenderId: '929162421351',
+    projectId: 'asadproject-f2871',
+    storageBucket: 'asadproject-f2871.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyA9LByp-IuQE_9FZh_jebcm7FUSEBKpyUI',
-    appId: '1:212841961575:ios:194a7c5c4f76ef390c9cc2',
-    messagingSenderId: '212841961575',
-    projectId: 'mehdi1-fe454',
-    storageBucket: 'mehdi1-fe454.appspot.com',
+    apiKey: 'AIzaSyC2K1ZRS28mh2jjbRR2ebBJnI438o-agJs',
+    appId: '1:929162421351:ios:e9d16fbfb84fca1fd820c2',
+    messagingSenderId: '929162421351',
+    projectId: 'asadproject-f2871',
+    storageBucket: 'asadproject-f2871.appspot.com',
     iosBundleId: 'com.example.ffastpro',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyA9LByp-IuQE_9FZh_jebcm7FUSEBKpyUI',
-    appId: '1:212841961575:ios:399b0d1b889c1d0f0c9cc2',
-    messagingSenderId: '212841961575',
-    projectId: 'mehdi1-fe454',
-    storageBucket: 'mehdi1-fe454.appspot.com',
+    apiKey: 'AIzaSyC2K1ZRS28mh2jjbRR2ebBJnI438o-agJs',
+    appId: '1:929162421351:ios:840d00550cfc837bd820c2',
+    messagingSenderId: '929162421351',
+    projectId: 'asadproject-f2871',
+    storageBucket: 'asadproject-f2871.appspot.com',
     iosBundleId: 'com.example.ffastpro.RunnerTests',
   );
 }
